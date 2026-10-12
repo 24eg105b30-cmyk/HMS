@@ -1,0 +1,3 @@
+# Ensure mvnw preserves Linux line endings (LF) for cloud environments like Render
+hospital-management-system/backend/mvnw text eol=lf
+*.sh text eol=lf

@@ -1,12 +1,11 @@
 services:
   - type: web
     name: hospital-management-backend
-    env: java
+    env: docker
     region: oregon
     plan: free
     rootDir: hospital-management-system/backend
-    buildCommand: ./mvnw clean package -DskipTests
-    startCommand: java -jar target/hospital-management-system-backend-0.0.1-SNAPSHOT.jar
+    dockerfilePath: Dockerfile
     envVars:
       - key: MONGODB_URI
         sync: false
